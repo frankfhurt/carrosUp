@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.up.carrosup.activity.AdicionarCarroActivity"
+    tools:showIn="@layout/activity_adicionar_carro">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/nome_carro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome do carro"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.AppCompatSpinner>
+
+    <Button
+        android:onClick="cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Cadastrar!" />
+</LinearLayout>
